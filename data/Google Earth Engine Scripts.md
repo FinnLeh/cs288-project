@@ -1,0 +1,5 @@
+# Google Earth Engine Scripts
+
+[This script](https://code.earthengine.google.com/df4f66d216c71b699a4913a2c9670044) was used to retrieve satellite images for each state in Nigeria one by one, since Google Earth Engine (GEE) does not support exporting multiple images to Drive in parallel. It also includes the date filters used to get seasonal images for each state.
+
+[This script](https://code.earthengine.google.com/f218a6cc5cac4d289b4d7ec30e0cd6cd) was used to display what satellite images the Sentinel-2 query would yield for all of Nigeria. The result is an image collection, where each image in the collection corresponds to an image mosaic for each state in Nigeria. It is helpful for seeing whether a query will return images for the whole country, as sometimes certain queries may have missing images for certain regions. For instance, if we want a certain season and for cloud coverage to be very low, running this script would enable us to quickly see that parts of southern Nigeria will have missing images since it is wetter.
